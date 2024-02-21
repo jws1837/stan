@@ -1,0 +1,11 @@
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    - phpstan-baseline.neon
+parameters:
+    level: 8
+    phpVersion: 80000
+    paths:
+        - src
+    ignoreErrors:
+        - '#Call to an undefined method Mockery\\ExpectationInterface#'
+        - '#Mockery\\(?:Legacy)?MockInterface#'
